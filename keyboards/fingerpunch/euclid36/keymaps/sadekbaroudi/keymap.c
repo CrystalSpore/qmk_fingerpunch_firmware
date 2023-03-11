@@ -239,17 +239,17 @@ bool encoder_update_keymap(uint8_t index, bool clockwise) {
     if (index == 0) {
         // Volume control
         if (clockwise) {
-            tap_code(KC_VOLU);
+            tap_code(KC_MPRV);
         } else {
-            tap_code(KC_VOLD);
+            tap_code(KC_MNXT);
         }
     }
     else if (index == 1) {
       if(clockwise) {
-        tap_code16(C(KC_LEFT));
+        tap_code16(C(KC_VOLU));
       }
       else{
-        tap_code16(C(KC_RGHT));
+        tap_code16(C(KC_VOLD));
       }
     }
 
